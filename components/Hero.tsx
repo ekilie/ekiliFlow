@@ -2,96 +2,29 @@
 
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import Particles from 'react-particles'
-import { loadFull } from 'tsparticles'
-import { useCallback } from 'react'
-import type { Engine } from 'tsparticles-engine'
 
 export default function Hero() {
-  const particlesInit = useCallback(async (engine: Engine) => {
-    await loadFull(engine)
-  }, [])
-
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-neutral-50 dark:bg-neutral-900">
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={{
-          fullScreen: { enable: false },
-          background: {
-            color: {
-              value: "transparent",
-            },
-          },
-          fpsLimit: 120,
-          interactivity: {
-            events: {
-              onClick: {
-                enable: true,
-                mode: "push",
-              },
-              onHover: {
-                enable: true,
-                mode: "repulse",
-              },
-              resize: true,
-            },
-            modes: {
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-            },
-          },
-          particles: {
-            color: {
-              value: "#FF8C00",
-            },
-            links: {
-              color: "#FF8C00",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outModes: {
-                default: "bounce",
-              },
-              random: false,
-              speed: 2,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 800,
-              },
-              value: 80,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              value: { min: 1, max: 5 },
-            },
-          },
-          detectRetina: true,
-        }}
-        className="absolute inset-0 z-0"
-      />
+      {/* SVG Background with Gradient */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute inset-0 w-full h-full"
+        viewBox="0 0 1440 320"
+      >
+        <defs>
+          <linearGradient id="gradient1" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#FF8C00" stopOpacity="0.6" />
+            <stop offset="100%" stopColor="#FF4500" stopOpacity="0.4" />
+          </linearGradient>
+        </defs>
+        <path
+          fill="url(#gradient1)"
+          fillOpacity="1"
+          d="M0,320L48,309.3C96,299,192,277,288,240C384,203,480,149,576,122.7C672,96,768,96,864,128C960,160,1056,224,1152,245.3C1248,267,1344,245,1392,224L1440,203L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,32C768,64,672,128,576,160C480,192,384,224,288,213.3C192,203,96,160,48,122.7L0,85L0,320Z"
+        ></path>
+      </svg>
+
       <div className="container mx-auto px-4 z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -99,7 +32,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-neutral-900 dark:text-white">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500 dark:from-orange-300 dark:to-red-500">
             Welcome to <span className="text-neutral-700 dark:text-neutral-300">ekiliFlow</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-neutral-700 dark:text-neutral-400">
@@ -107,7 +40,7 @@ export default function Hero() {
           </p>
           <Button
             size="lg"
-            className="bg-neutral-800 dark:bg-neutral-700 text-white hover:bg-neutral-700 dark:hover:bg-neutral-600"
+            className="bg-neutral-800 dark:bg-neutral-700 text-white hover:bg-neutral-700 dark:hover:bg-neutral-600 transition-all ease-in-out duration-300"
           >
             Get Started
           </Button>
