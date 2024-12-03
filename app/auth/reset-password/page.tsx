@@ -25,8 +25,9 @@ export default function ResetPasswordPage() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
+      className="flex justify-center items-center min-h-screen"
     >
-      <Card>
+      <Card className="w-full max-w-md bg-white dark:bg-neutral-800 shadow-lg">
         <CardHeader>
           <CardTitle>Reset Password</CardTitle>
           <CardDescription>Enter your email to reset your password</CardDescription>
@@ -36,10 +37,10 @@ export default function ResetPasswordPage() {
             <div className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="john@example.com" required />
+                <Input id="email" type="email" placeholder="john@example.com" required className="border-neutral-300 dark:border-neutral-600 focus:ring-2 focus:ring-neutral-500 dark:focus:ring-neutral-400" />
               </div>
             </div>
-            <Button className="w-full mt-6" type="submit" disabled={isLoading}>
+            <Button className="w-full mt-6 bg-neutral-800 dark:bg-neutral-700 text-white hover:bg-neutral-700 dark:hover:bg-neutral-600" type="submit" disabled={isLoading}>
               {isLoading ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -52,7 +53,7 @@ export default function ResetPasswordPage() {
           </form>
         </CardContent>
         <CardFooter>
-          <Link href="/auth/login" className="text-sm text-primary hover:underline">
+          <Link href="/auth/login" className="text-sm text-primary hover:underline dark:text-neutral-300">
             Remember your password? Sign in
           </Link>
         </CardFooter>
@@ -60,4 +61,3 @@ export default function ResetPasswordPage() {
     </motion.div>
   )
 }
-
