@@ -7,7 +7,7 @@ const plans = [
     name: 'Starter',
     price: '$49',
     description: 'Perfect for small businesses',
-    features: ['Basic ERP functionality', 'Up to 5 users', 'Email support'],
+    features: ['Basic ERP functionality', 'Up to 5 users', 'Email support','And more'],
   },
   {
     name: 'Professional',
