@@ -25,9 +25,9 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-gray-100 dark:bg-gray-800 transition-colors duration-300">
+    <section className="py-20 bg-neutral-100 dark:bg-neutral-800 transition-colors duration-300">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+        <h2 className="text-4xl font-bold text-center mb-12 text-neutral-900 dark:text-white">
           What Our Clients Say
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -46,11 +46,11 @@ export default function Testimonials() {
                       <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
                     </Avatar>
                     <div>
-                      <p className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">{testimonial.role}</p>
+                      <p className="font-semibold text-neutral-900 dark:text-white">{testimonial.name}</p>
+                      <p className="text-sm text-neutral-600 dark:text-neutral-400">{testimonial.role}</p>
                     </div>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300">{testimonial.content}</p>
+                  <p className="text-neutral-700 dark:text-neutral-300">{testimonial.content}</p>
                 </CardContent>
               </Card>
             </motion.div>

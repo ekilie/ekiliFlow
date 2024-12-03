@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import Particles from 'react-particles'
 import { loadFull } from 'tsparticles'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback } from 'react'
 import type { Engine } from 'tsparticles-engine'
 
 export default function Hero() {
@@ -12,25 +12,8 @@ export default function Hero() {
     await loadFull(engine)
   }, [])
 
-  const [isDarkMode, setIsDarkMode] = useState(false)
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-    setIsDarkMode(mediaQuery.matches)
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      setIsDarkMode(e.matches)
-    }
-
-    mediaQuery.addEventListener('change', handleChange)
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleChange)
-    }
-  }, [])
-
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-neutral-50 dark:bg-neutral-900">
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -116,16 +99,15 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-            Welcome to <span className="text-neutral-900 dark:text-neutral-300">ekiliFlow</span>
-          <h1 className={`text-5xl md:text-6xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-neutral-900'}`}>
-            Welcome to <span className="text-neutral-900 dark:text-neutral-300">ekiliFlow</span>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-neutral-900 dark:text-white">
+            Welcome to <span className="text-neutral-700 dark:text-neutral-300">ekiliFlow</span>
           </h1>
-          <p className={`text-xl md:text-2xl mb-8 ${isDarkMode ? 'text-neutral-300' : 'text-neutral-700'}`}>
+          <p className="text-xl md:text-2xl mb-8 text-neutral-700 dark:text-neutral-400">
             Streamline Your Business with Our Powerful ERP Solution
           </p>
           <Button
             size="lg"
-            className={`bg-neutral-800 ${isDarkMode ? 'dark:bg-neutral-900' : 'bg-neutral-100'} text-white hover:bg-neutral-700 ${isDarkMode ? 'dark:hover:bg-neutral-800' : 'hover:bg-neutral-200'}`}
+            className="bg-neutral-800 dark:bg-neutral-700 text-white hover:bg-neutral-700 dark:hover:bg-neutral-600"
           >
             Get Started
           </Button>
