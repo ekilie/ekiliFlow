@@ -23,7 +23,7 @@ export default function LandingPage() {
 
   return (
     <div className={`min-h-screen ${darkMode ? 'dark' : ''}`}>
-      <div className="bg-gradient-to-b from-orange-100 to-blue-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
+      <div className="bg-gradient-to-b from-orange-100 to-blue-100 dark:from-neutral-900 dark:to-neutral-800 transition-colors duration-300">
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         <Hero />
         <Features />
