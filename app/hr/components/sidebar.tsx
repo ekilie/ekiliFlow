@@ -43,7 +43,7 @@ export function Sidebar() {
           <Link href="/employees" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Users className="inline-block mr-2 h-5 w-5" /> Employees
           </Link>
-          <Link href="/employee-onboarding" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/employee-onboarding" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <UserPlus2 className="inline-block mr-2 h-5 w-5" /> Employees Onboarding
           </Link>
           <Link href="/hr-configuration" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
