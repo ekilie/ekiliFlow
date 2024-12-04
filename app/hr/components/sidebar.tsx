@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Home, Users, Calendar, BarChart2, Settings, Briefcase, Clock, UserPlus, UserMinus, Award, FileText, UserCheck, UsersIcon, DollarSign, CreditCard, Truck, PieChart, BookOpen, Banknote, FileSpreadsheet, Building, RefreshCw, Menu, X } from 'lucide-react'
+import { Home, Users, Calendar, BarChart2, Settings, Briefcase, Clock, UserPlus, UserMinus, Award, FileText, UserCheck, UsersIcon, DollarSign, CreditCard, Truck, PieChart, BookOpen, Banknote, FileSpreadsheet, Building, RefreshCw, Menu, X, GraduationCap } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
 export function Sidebar() {
@@ -63,6 +63,9 @@ export function Sidebar() {
           </Link>
           <Link href="/performance-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Award className="inline-block mr-2 h-5 w-5" /> Performance Management
+          </Link>
+          <Link href="/leave-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+            <GraduationCap className="inline-block mr-2 h-5 w-5" /> Training & Development
           </Link>
           <Link href="/leave-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Calendar className="inline-block mr-2 h-5 w-5" /> Leave Management
