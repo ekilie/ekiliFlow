@@ -44,6 +44,9 @@ export function Sidebar() {
             <Users className="inline-block mr-2 h-5 w-5" /> Employees
           </Link>
           <Link href="/hr-configuration" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+            <Settings className="inline-block mr-2 h-5 w-5" /> Employee  Onboading
+          </Link>
+          <Link href="/hr-configuration" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Settings className="inline-block mr-2 h-5 w-5" /> HR Configuration
           </Link>
           <Link href="/staff-transfer" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
