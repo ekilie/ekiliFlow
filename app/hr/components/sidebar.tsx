@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Home, Users, Calendar, BarChart2, Settings, Briefcase, Clock, UserPlus, UserMinus, Award, FileText, UserCheck, UsersIcon, DollarSign, CreditCard, Truck, PieChart, BookOpen, Banknote, FileSpreadsheet, Building, RefreshCw, Menu, X, GraduationCap } from 'lucide-react'
+import { Home, Users, Calendar, BarChart2, Settings, Briefcase, Clock, UserPlus, UserMinus, Award, FileText, UserCheck, UsersIcon, DollarSign, CreditCard, Truck, PieChart, BookOpen, Banknote, FileSpreadsheet, Building, RefreshCw, Menu, X, GraduationCap, UserPlus2 } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
 export function Sidebar() {
@@ -43,8 +43,8 @@ export function Sidebar() {
           <Link href="/employees" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Users className="inline-block mr-2 h-5 w-5" /> Employees
           </Link>
-          <Link href="/hr-configuration" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
-            <Settings className="inline-block mr-2 h-5 w-5" /> Employee  Onboading
+          <Link href="/employee-onboarding" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+            <UserPlus2 className="inline-block mr-2 h-5 w-5" /> Employees Onboarding
           </Link>
           <Link href="/hr-configuration" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Settings className="inline-block mr-2 h-5 w-5" /> HR Configuration
