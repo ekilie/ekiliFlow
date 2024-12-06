@@ -40,43 +40,43 @@ export function Sidebar() {
           <Link href="/" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Home className="inline-block mr-2 h-5 w-5" /> Dashboard
           </Link>
-          <Link href="/employees" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/employees" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Users className="inline-block mr-2 h-5 w-5" /> Employees
           </Link>
           <Link href="/hr/employee-onboarding" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <UserPlus2 className="inline-block mr-2 h-5 w-5" /> Employees Onboarding
           </Link>
-          <Link href="/hr-configuration" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/hr-configuration" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Settings className="inline-block mr-2 h-5 w-5" /> HR Configuration
           </Link>
-          <Link href="/staff-transfer" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/staff-transfer" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Briefcase className="inline-block mr-2 h-5 w-5" /> Staff Transfer
           </Link>
-          <Link href="/timesheet-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/timesheet-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Clock className="inline-block mr-2 h-5 w-5" /> Timesheet Management
           </Link>
-          <Link href="/manage-interns" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/manage-interns" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <UserPlus className="inline-block mr-2 h-5 w-5" /> Manage Interns
           </Link>
-          <Link href="/recruitment-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/recruitment-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <UsersIcon className="inline-block mr-2 h-5 w-5" /> Recruitment Management
           </Link>
-          <Link href="/separation-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/separation-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <UserMinus className="inline-block mr-2 h-5 w-5" /> Separation Management
           </Link>
-          <Link href="/performance-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/performance-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Award className="inline-block mr-2 h-5 w-5" /> Performance Management
           </Link>
-          <Link href="/leave-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/leave-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <GraduationCap className="inline-block mr-2 h-5 w-5" /> Training & Development
           </Link>
-          <Link href="/leave-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/leave-management" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Calendar className="inline-block mr-2 h-5 w-5" /> Leave Management
           </Link>
-          <Link href="/delegations" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/delegations" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <UserCheck className="inline-block mr-2 h-5 w-5" /> Delegations
           </Link>
-          <Link href="/committee-settings" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr/committee-settings" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <FileText className="inline-block mr-2 h-5 w-5" /> Committee Settings
           </Link>
 
