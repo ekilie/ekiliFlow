@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Home, Users, Calendar, BarChart2, Settings, Briefcase, Clock, UserPlus, UserMinus, Award, FileText, UserCheck, UsersIcon, DollarSign, CreditCard, Truck, PieChart, BookOpen, Banknote, FileSpreadsheet, Building, RefreshCw, Menu, X, GraduationCap, UserPlus2 } from 'lucide-react'
+import { Home, Users, Calendar, BarChart2, Settings, Briefcase, Clock, UserPlus, UserMinus, Award, FileText, UserCheck, UsersIcon, DollarSign, CreditCard, Truck, PieChart, BookOpen, Banknote, FileSpreadsheet, Building, RefreshCw, Menu, X, GraduationCap, UserPlus2, UserCog } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
 export function Sidebar() {
@@ -37,7 +37,7 @@ export function Sidebar() {
       </Button>
       <aside className={`bg-gray-800 text-white w-64 space-y-6 py-7 px-2 fixed inset-y-0 left-0 transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:relative md:translate-x-0 transition duration-200 ease-in-out z-30 overflow-y-auto`}>
         <nav className="space-y-2">
-          <Link href="/" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <Link href="/hr" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Home className="inline-block mr-2 h-5 w-5" /> Dashboard
           </Link>
           <Link href="/hr/employees" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
@@ -46,6 +46,9 @@ export function Sidebar() {
           <Link href="/hr/employee-onboarding" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <UserPlus2 className="inline-block mr-2 h-5 w-5" /> Employees Onboarding
           </Link>
+          <Link  href="/hr/employee-portal" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
+          <UserCog className="inline-block mr-2 h-5 w-5" /> Employee Self-service
+           </Link>
           <Link href="/hr/hr-configuration" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white">
             <Settings className="inline-block mr-2 h-5 w-5" /> HR Configuration
           </Link>
